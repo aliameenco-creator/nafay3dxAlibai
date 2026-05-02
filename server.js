@@ -6,7 +6,7 @@ const path = require('path');
 
 const app = express();
 app.use(express.json({ limit: '10kb' }));
-app.use(express.static(path.join(__dirname)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 const contactLimiter = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -79,10 +79,10 @@ app.post('/api/contact', contactLimiter, async (req, res) => {
   }
 });
 
-app.get('/privacy', (req, res) => res.sendFile(path.join(__dirname, 'privacy.html')));
+app.get('/privacy', (req, res) => res.sendFile(path.join(__dirname, 'public', 'privacy.html')));
 
 app.use((_req, res) => {
-  res.status(404).sendFile(path.join(__dirname, '404.html'));
+  res.status(404).sendFile(path.join(__dirname, 'public', '404.html'));
 });
 
 const PORT = process.env.PORT || 3000;
