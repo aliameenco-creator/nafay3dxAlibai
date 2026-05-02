@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>404 — Page Not Found · Ali Baii Official</title>
+<meta name="robots" content="noindex, follow" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+<style>
+  .not-found {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: var(--gutter);
+    gap: 24px;
+  }
+  .not-found .code {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--fg-faint);
+    text-transform: uppercase;
+  }
+  .not-found h1 {
+    font-size: clamp(80px, 18vw, 200px);
+    line-height: 0.9;
+    color: var(--accent);
+    letter-spacing: -0.04em;
+  }
+  .not-found p {
+    max-width: 36ch;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .not-found .actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<nav class="top" aria-label="Primary">
+  <a href="/" class="brand"><span class="dot" aria-hidden="true"></span>ALI BAII / OFFICIAL</a>
+  <div class="right">
+    <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle"></button>
+  </div>
+</nav>
+
+<main class="not-found">
+  <span class="code">Error 404</span>
+  <h1>404</h1>
+  <p>This page doesn't exist — or was moved. Let's get you back on track.</p>
+  <div class="actions">
+    <a href="/" class="btn primary magnetic"><span>Back to home</span><span class="arrow">&rarr;</span></a>
+    <a href="/#contact" class="btn magnetic"><span>Contact us</span><span class="arrow">&rarr;</span></a>
+  </div>
+</main>
+
+<script>
+  const root = document.documentElement;
+  const stored = localStorage.getItem('theme');
+  if (stored) root.dataset.theme = stored;
+  else root.dataset.theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    localStorage.setItem('theme', next);
+  });
+  document.querySelectorAll('.magnetic').forEach(el => {
+    el.addEventListener('mousemove', e => {
+      const r = el.getBoundingClientRect();
+      el.style.transform = `translate(${(e.clientX-(r.left+r.width/2))*.3}px,${(e.clientY-(r.top+r.height/2))*.3}px)`;
+    });
+    el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+  });
+</script>
+
+</body>
+</html>

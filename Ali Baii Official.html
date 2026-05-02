@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+<title>Ali Baii Official — AI, Automation & Premium Web for Mid-Market Brands</title>
+<meta name="description" content="Ali Baii Official is an AI agency building custom websites, portfolio sites, automation systems, and digital marketing engines for mid-market companies. Quietly engineered. Cinematically designed." />
+<meta name="keywords" content="AI agency, AI automation, custom website design, portfolio websites, digital marketing, AI consulting, mid-market AI, workflow automation" />
+<meta name="author" content="Ali Baii Official" />
+<meta name="theme-color" content="#0c0d12" />
+
+<template id="__bundler_thumbnail" data-bg-color="#0c0d12">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#0c0d12"/>
+    <circle cx="600" cy="400" r="180" fill="none" stroke="#e89647" stroke-width="2" opacity="0.6"/>
+    <circle cx="600" cy="400" r="120" fill="none" stroke="#e89647" stroke-width="2" opacity="0.8"/>
+    <circle cx="600" cy="400" r="60" fill="#e89647"/>
+    <text x="600" y="640" text-anchor="middle" fill="#f5f2ed" font-family="Georgia, serif" font-style="italic" font-size="42">Ali Baii / Official</text>
+  </svg>
+</template>
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Ali Baii Official — AI, Automation & Premium Web" />
+<meta property="og:description" content="Custom websites, AI automation, and digital marketing for mid-market brands. Quietly engineered. Cinematically designed." />
+<meta property="og:site_name" content="Ali Baii Official" />
+<meta property="og:locale" content="en_US" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ali Baii Official — AI, Automation & Premium Web" />
+<meta name="twitter:description" content="Custom websites, AI automation, and digital marketing for mid-market brands." />
+
+<!-- Canonical & robots -->
+<link rel="canonical" href="https://alibaii.com/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="styles.css" />
+
+<!-- JSON-LD: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ali Baii Official",
+  "url": "https://alibaii.com",
+  "description": "AI agency building custom websites, automation systems, and digital marketing engines for mid-market companies.",
+  "founder": "Ali Baii",
+  "sameAs": ["https://www.linkedin.com/", "https://twitter.com/", "https://www.instagram.com/"]
+}
+</script>
+
+<!-- JSON-LD: Services -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Ali Baii Official",
+  "image": "https://alibaii.com/og.png",
+  "priceRange": "$$$",
+  "address": { "@type": "PostalAddress", "addressLocality": "Remote", "addressCountry": "Global" },
+  "areaServed": "Worldwide",
+  "serviceType": ["Custom website design", "AI automation", "Digital marketing", "Portfolio websites", "AI consulting"]
+}
+</script>
+
+<!-- JSON-LD: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"What does Ali Baii Official actually do?","acceptedAnswer":{"@type":"Answer","text":"We design and build custom websites, portfolio sites, automation systems, and AI workflows — plus the digital marketing engines that make them earn their keep."}},
+    {"@type":"Question","name":"Who do you work with?","acceptedAnswer":{"@type":"Answer","text":"Mid-market brands that have outgrown templates and want something engineered for them — usually $5M–$200M revenue."}},
+    {"@type":"Question","name":"How long does a project take?","acceptedAnswer":{"@type":"Answer","text":"A custom site lands in 4–7 weeks. Automation builds run in 2–4 week sprints. Marketing engines are ongoing."}},
+    {"@type":"Question","name":"Do you keep the code or do we own it?","acceptedAnswer":{"@type":"Answer","text":"You own everything. Code, copy, accounts, automations. We hand over keys."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Skip link for accessibility -->
+<a href="#main" class="mono" style="position:absolute;left:-9999px;top:0;z-index:200;padding:8px 16px;background:var(--accent);color:var(--ink);" onfocus="this.style.left='8px'" onblur="this.style.left='-9999px'">Skip to content</a>
+
+<nav class="top" aria-label="Primary">
+  <a href="#" class="brand"><span class="dot" aria-hidden="true"></span>ALI BAII / OFFICIAL</a>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#playground">Playground</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="right">
+    <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle"></button>
+    <a href="#contact" class="mono" style="color:var(--accent)">Book a call &rarr;</a>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- HERO -->
+<header class="hero" data-screen-label="01 Hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="container">
+    <span class="eyebrow reveal">AI Agency · Est. 2024 · Remote / Worldwide</span>
+    <h1 class="display reveal" style="margin-top:24px">
+      We build the<br/>
+      <em>quiet machines</em><br/>
+      that make brands<br/>
+      louder.
+    </h1>
+    <div class="meta-row">
+      <p class="lede reveal">Custom websites. AI automation. Digital marketing engines. We are a small studio for mid-market brands that have outgrown the template economy.</p>
+      <div class="ctas reveal">
+        <a href="#contact" class="btn primary magnetic"><span>Book a call</span><span class="arrow">&rarr;</span></a>
+        <a href="#work" class="btn magnetic"><span>See the work</span><span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span>Scroll</span></div>
+</header>
+
+<!-- Marquee -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Custom Websites</span><span>AI Automation</span><span>Portfolio Design</span><span>Digital Marketing</span><span>Workflow Engineering</span><span>SEO &amp; Content</span>
+    <span>Custom Websites</span><span>AI Automation</span><span>Portfolio Design</span><span>Digital Marketing</span><span>Workflow Engineering</span><span>SEO &amp; Content</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" data-screen-label="02 Services">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">01 / Services</span>
+      <h2>A studio shaped like an <em style="color:var(--accent);font-style:italic">operating system</em>.</h2>
+    </div>
+    <div class="services-grid">
+      <article class="service reveal">
+        <div class="num"><span>(01)</span><span>WEB</span></div>
+        <h3>Custom <span class="accent">websites</span> &amp; portfolios</h3>
+        <p>Bespoke sites engineered like products. Editorial design, real performance, and copy that doesn't sound like everyone else's. No drag-and-drop tax.</p>
+        <div class="tags"><span class="tag">Brand sites</span><span class="tag">Portfolios</span><span class="tag">CMS</span><span class="tag">E-commerce</span></div>
+      </article>
+      <article class="service reveal">
+        <div class="num"><span>(02)</span><span>AI</span></div>
+        <h3>AI <span class="accent">automation</span> systems</h3>
+        <p>Custom agents, internal tools, and pipelines that quietly do the work three of your hires used to. Built to your stack, not a vendor's roadmap.</p>
+        <div class="tags"><span class="tag">Agents</span><span class="tag">RAG</span><span class="tag">Workflows</span><span class="tag">APIs</span></div>
+      </article>
+      <article class="service reveal">
+        <div class="num"><span>(03)</span><span>MKT</span></div>
+        <h3>Digital <span class="accent">marketing</span> engines</h3>
+        <p>SEO, content, paid, and lifecycle — operated as one machine, not five disconnected vendors invoicing you separately.</p>
+        <div class="tags"><span class="tag">SEO</span><span class="tag">Content</span><span class="tag">Paid</span><span class="tag">Lifecycle</span></div>
+      </article>
+      <article class="service reveal">
+        <div class="num"><span>(04)</span><span>OPS</span></div>
+        <h3>AI <span class="accent">consulting</span> &amp; ops</h3>
+        <p>Where to point AI in your business, how to measure it, and what to leave humans alone with. Six-week engagements, plain-English deliverables.</p>
+        <div class="tags"><span class="tag">Audits</span><span class="tag">Strategy</span><span class="tag">Training</span><span class="tag">Hand-off</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" data-screen-label="03 Process">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">02 / Process</span>
+      <h2>Five steps. <em style="color:var(--accent);font-style:italic">No theatre.</em></h2>
+    </div>
+    <div class="process-list">
+      <div class="process-step reveal">
+        <span class="num">/01</span>
+        <h3>Listen</h3>
+        <p>Two calls, a shared doc, and a real audit of what's actually broken — not a pitch deck dressed as discovery.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="num">/02</span>
+        <h3>Map</h3>
+        <p>We sketch the system. What ships in v1, what waits, what gets killed. You see it before we touch a keyboard.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="num">/03</span>
+        <h3>Make</h3>
+        <p>Design and engineering happen in the same room (Slack channel). You see daily progress, not monthly reveals.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="num">/04</span>
+        <h3>Measure</h3>
+        <p>We instrument everything. If we can't show it moved, we didn't ship it. Reports in plain English.</p>
+      </div>
+      <div class="process-step reveal">
+        <span class="num">/05</span>
+        <h3>Hand-off</h3>
+        <p>You get the keys, the docs, the loom walkthroughs, and a 30-day window to break things and ask anything.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section class="manifesto" data-screen-label="04 Manifesto">
+  <div class="container">
+    <span class="eyebrow reveal" style="display:block;text-align:center;margin-bottom:48px">03 / Manifesto</span>
+    <p class="manifesto-quote reveal">
+      Most agencies sell <em>noise</em>.<br/>
+      We sell the <em>quiet</em><br/>
+      that comes after.
+    </p>
+    <div class="manifesto-pillars">
+      <div class="pillar reveal">
+        <h4>Taste</h4>
+        <p>We refuse to ship the average. If a frame, a sentence, or a flow could be sharper — we sharpen it. Twice.</p>
+      </div>
+      <div class="pillar reveal">
+        <h4>Engineering</h4>
+        <p>Pretty without performant is a liability. Every site we ship is fast, accessible, and built to be edited by humans.</p>
+      </div>
+      <div class="pillar reveal">
+        <h4>Honesty</h4>
+        <p>If AI isn't the answer, we'll say so. If your real problem is a sales script, not a website, we'll say that too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASES -->
+<section id="work" data-screen-label="05 Work">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">04 / Selected work</span>
+      <h2>Built quietly. <em style="color:var(--accent);font-style:italic">Talked about loudly.</em></h2>
+    </div>
+    <div class="cases">
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="industry">Hospitality · 2025</span>
+          <h3>Maison <em>Verde</em> — site &amp; concierge agent</h3>
+          <p>A boutique hotel group rebuilt around a single editorial site and a 24/7 concierge AI that books, upsells, and writes back like a human would.</p>
+        </div>
+        <div class="case-stats">
+          <div class="stat"><div class="num"><em>3.4</em>×</div><div class="label">Direct bookings</div></div>
+          <div class="stat"><div class="num"><em>−68</em>%</div><div class="label">Front-desk tickets</div></div>
+          <div class="stat"><div class="num"><em>92</em></div><div class="label">Lighthouse perf</div></div>
+          <div class="stat"><div class="num"><em>11</em>d</div><div class="label">From kickoff to v1</div></div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="industry">B2B SaaS · 2025</span>
+          <h3>Northvane — full <em>marketing engine</em></h3>
+          <p>SEO, content, paid, and lifecycle rebuilt as a single instrumented system. We replaced four vendors with one dashboard.</p>
+        </div>
+        <div class="case-stats">
+          <div class="stat"><div class="num"><em>5.1</em>×</div><div class="label">Organic traffic</div></div>
+          <div class="stat"><div class="num"><em>−41</em>%</div><div class="label">CAC</div></div>
+          <div class="stat"><div class="num"><em>120</em>+</div><div class="label">Pages indexed</div></div>
+          <div class="stat"><div class="num"><em>$2.4</em>M</div><div class="label">Influenced pipeline</div></div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div class="case-meta">
+          <span class="industry">Architecture · 2024</span>
+          <h3>Studio Halden — <em>portfolio</em> with intent</h3>
+          <p>An award-winning architecture studio's portfolio, designed like a printed monograph and engineered like a product.</p>
+        </div>
+        <div class="case-stats">
+          <div class="stat"><div class="num"><em>2.8</em>×</div><div class="label">Inbound leads</div></div>
+          <div class="stat"><div class="num"><em>4.7</em>m</div><div class="label">Avg. session</div></div>
+          <div class="stat"><div class="num"><em>0</em></div><div class="label">CMS plugins</div></div>
+          <div class="stat"><div class="num"><em>A+</em></div><div class="label">Mobile vitals</div></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PLAYGROUND -->
+<section id="playground" class="playground" data-screen-label="06 Playground">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">05 / Playground</span>
+      <h2>Five interactive shaders. <em style="color:var(--accent);font-style:italic">Move your cursor.</em></h2>
+    </div>
+    <div class="playground-stage reveal">
+      <canvas id="playCanvas"></canvas>
+      <div class="playground-overlay">
+        <div class="playground-info">
+          <div class="title-block">
+            <span id="shaderIndex">01 / 05</span>
+            <span class="title" id="shaderTitle">Liquid Ink</span>
+          </div>
+          <span id="shaderDesc" style="max-width:280px;text-align:right">Warm ink pulled through cool depth.</span>
+        </div>
+        <div class="playground-controls">
+          <div class="playground-thumbs" id="thumbs"></div>
+          <div class="playground-nav">
+            <button class="nav-btn" id="prevBtn" aria-label="Previous shader">&larr;</button>
+            <button class="nav-btn" id="nextBtn" aria-label="Next shader">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="reveal mono" style="margin-top:24px;color:var(--fg-faint);text-align:center">
+      Imagined as wallpapers for a futuristic OS. Built with WebGL fragment shaders. Click to send a pulse.
+    </p>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" data-screen-label="07 Pricing">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">06 / Engagement</span>
+      <h2>Three ways to <em style="color:var(--accent);font-style:italic">start working</em> with us.</h2>
+    </div>
+    <div class="pricing-grid">
+      <div class="tier reveal">
+        <h3>Sprint</h3>
+        <p class="tagline">2–4 weeks · fixed scope</p>
+        <div class="price">From <em>$8k</em></div>
+        <div class="price-suffix">One-time</div>
+        <ul>
+          <li>Marketing site or portfolio (up to 6 pages)</li>
+          <li>One AI automation flow</li>
+          <li>Editorial copy pass</li>
+          <li>Loom walkthroughs &amp; hand-off</li>
+          <li>30-day support window</li>
+        </ul>
+        <a href="#contact" class="btn magnetic"><span>Book a sprint</span><span class="arrow">&rarr;</span></a>
+      </div>
+      <div class="tier featured reveal">
+        <h3>Studio</h3>
+        <p class="tagline">6–10 weeks · custom build</p>
+        <div class="price">From <em>$28k</em></div>
+        <div class="price-suffix">Project-based</div>
+        <ul>
+          <li>Full custom site, design + engineering</li>
+          <li>Up to 4 AI automations / agents</li>
+          <li>Brand voice &amp; messaging</li>
+          <li>SEO architecture &amp; instrumentation</li>
+          <li>Full hand-off + 90-day support</li>
+        </ul>
+        <a href="#contact" class="btn primary magnetic"><span>Book a studio engagement</span><span class="arrow">&rarr;</span></a>
+      </div>
+      <div class="tier reveal">
+        <h3>Engine</h3>
+        <p class="tagline">Ongoing · monthly retainer</p>
+        <div class="price">From <em>$9k</em>/mo</div>
+        <div class="price-suffix">3-month minimum</div>
+        <ul>
+          <li>Marketing engine: SEO, content, paid, lifecycle</li>
+          <li>Site &amp; automation evolution</li>
+          <li>Weekly working sessions</li>
+          <li>Dashboard with the numbers that matter</li>
+          <li>Pause anytime after month three</li>
+        </ul>
+        <a href="#contact" class="btn magnetic"><span>Talk about a retainer</span><span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" data-screen-label="08 Testimonials">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">07 / Words</span>
+      <h2>From the people who <em style="color:var(--accent);font-style:italic">paid us</em>.</h2>
+    </div>
+    <div class="testimonials-track">
+      <figure class="tcard reveal">
+        <blockquote>"Ali's team rebuilt our front door in six weeks. Our <em>conversion tripled</em> and the site finally sounds like us."</blockquote>
+        <cite><span class="name">Lena Karlsson</span><span class="role">CEO · Maison Verde</span></cite>
+      </figure>
+      <figure class="tcard reveal">
+        <blockquote>"They quietly replaced four vendors with one dashboard and a Slack channel. <em>Best decision</em> we made in 2025."</blockquote>
+        <cite><span class="name">Marcus Veil</span><span class="role">CMO · Northvane</span></cite>
+      </figure>
+      <figure class="tcard reveal">
+        <blockquote>"Most agencies talk in decks. <em>This studio talks in shipped things</em> — and they ship faster than my internal team."</blockquote>
+        <cite><span class="name">Priya Anand</span><span class="role">Founder · Studio Halden</span></cite>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section id="about" data-screen-label="09 About">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">08 / The studio</span>
+      <h2>Small on purpose. <em style="color:var(--accent);font-style:italic">Senior on principle.</em></h2>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="portrait"></div>
+        <h4>Ali Baii</h4>
+        <span class="role">Founder · Direction</span>
+      </div>
+      <div class="team-card reveal">
+        <div class="portrait"></div>
+        <h4>Naima A.</h4>
+        <span class="role">Design Lead</span>
+      </div>
+      <div class="team-card reveal">
+        <div class="portrait"></div>
+        <h4>Theo R.</h4>
+        <span class="role">Engineering · AI</span>
+      </div>
+      <div class="team-card reveal">
+        <div class="portrait"></div>
+        <h4>Sana K.</h4>
+        <span class="role">Strategy · Marketing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" data-screen-label="10 FAQ">
+  <div class="container">
+    <div class="sec-head reveal">
+      <span class="eyebrow">09 / Questions</span>
+      <h2>Things people <em style="color:var(--accent);font-style:italic">ask first.</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <div class="faq-q"><h3>What does Ali Baii Official actually do?</h3><span class="toggle">+</span></div>
+        <div class="faq-a"><p>We design and build custom websites, portfolio sites, automation systems, and AI workflows — plus the digital marketing engines that make them earn their keep. One studio, four disciplines, no hand-offs between vendors.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><h3>Who do you work with?</h3><span class="toggle">+</span></div>
+        <div class="faq-a"><p>Mid-market brands that have outgrown templates and want something engineered for them — usually $5M–$200M revenue. Founders, CMOs, and operators who want fewer vendors and more outcomes.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><h3>How long does a project take?</h3><span class="toggle">+</span></div>
+        <div class="faq-a"><p>A custom site lands in 4–7 weeks. Automation builds run in 2–4 week sprints. Marketing engines are ongoing — we don't believe in 12-month "transformation" projects.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><h3>Do you keep the code or do we own it?</h3><span class="toggle">+</span></div>
+        <div class="faq-a"><p>You own everything. Code, copy, accounts, automations. We hand over keys, not leases.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><h3>How do payments work?</h3><span class="toggle">+</span></div>
+        <div class="faq-a"><p>50% to start, 50% on hand-off for fixed projects. Retainers are billed monthly, pause-anytime after month three. Wire, ACH, or card.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <div class="faq-q"><h3>What if AI isn't the right answer?</h3><span class="toggle">+</span></div>
+        <div class="faq-a"><p>We'll tell you. We've turned down work where the real fix was a sales script, a hire, or a better landing page. Honesty is a service, too.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact" data-screen-label="11 Contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="reveal">
+        <span class="eyebrow" style="margin-bottom:24px;display:inline-flex">10 / Start a conversation</span>
+        <h2>Let's build the <em>quiet machine.</em></h2>
+        <p style="margin-top:24px;font-size:18px">Tell us about your business, your stack, and what's keeping you up at 2am. We reply within one working day — usually faster.</p>
+      </div>
+      <form class="contact-form reveal" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Sent ✓'; setTimeout(()=>this.reset(),1500);">
+        <div class="field">
+          <label for="name">Your name</label>
+          <input id="name" type="text" required autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="email">Work email</label>
+          <input id="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="company">Company</label>
+          <input id="company" type="text" autocomplete="organization" />
+        </div>
+        <div class="field">
+          <label for="interest">I'm interested in</label>
+          <select id="interest">
+            <option>A custom website or portfolio</option>
+            <option>AI automation / agents</option>
+            <option>A full marketing engine</option>
+            <option>Just a conversation</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="msg">What are we solving?</label>
+          <textarea id="msg" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn primary magnetic" style="margin-top:16px;align-self:flex-start"><span>Send</span><span class="arrow">&rarr;</span></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="top">
+    <div>
+      <div class="wordmark">Ali Baii / <em>Official.</em></div>
+      <p style="margin-top:24px;max-width:40ch">An AI agency for mid-market brands. Custom websites, automation, and marketing engines — engineered, not assembled.</p>
+    </div>
+    <div>
+      <h4>Studio</h4>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Selected work</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#playground">Playground</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Elsewhere</h4>
+      <ul>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter / X</a></li>
+        <li><a href="#">Read.cv</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bottom">
+    <span>© 2026 Ali Baii Official · All rights reserved</span>
+    <span>Designed &amp; engineered in-house</span>
+  </div>
+</footer>
+
+<script type="module">
+  import { createShader, SHADER_NAMES, SHADER_DESCRIPTIONS } from './shaders.js';
+
+  /* THEME */
+  const root = document.documentElement;
+  const stored = localStorage.getItem('theme');
+  if (stored) root.dataset.theme = stored;
+  else root.dataset.theme = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+
+  document.getElementById('themeToggle').addEventListener('click', () => {
+    const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+    root.dataset.theme = next;
+    localStorage.setItem('theme', next);
+  });
+
+  /* HERO SHADER */
+  const heroCanvas = document.getElementById('heroCanvas');
+  createShader(heroCanvas, 0, { global: false });
+
+  /* PLAYGROUND */
+  const playCanvas = document.getElementById('playCanvas');
+  let currentIdx = 0;
+  let activeShader = null;
+  const idxEl = document.getElementById('shaderIndex');
+  const titleEl = document.getElementById('shaderTitle');
+  const descEl = document.getElementById('shaderDesc');
+  const thumbsEl = document.getElementById('thumbs');
+
+  SHADER_NAMES.forEach((n, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'thumb' + (i === 0 ? ' active' : '');
+    btn.textContent = String(i + 1).padStart(2, '0');
+    btn.title = n;
+    btn.onclick = () => loadShader(i);
+    thumbsEl.appendChild(btn);
+  });
+
+  function loadShader(i){
+    if (activeShader) activeShader.destroy();
+    currentIdx = (i + SHADER_NAMES.length) % SHADER_NAMES.length;
+    activeShader = createShader(playCanvas, currentIdx);
+    idxEl.textContent = String(currentIdx + 1).padStart(2, '0') + ' / ' + String(SHADER_NAMES.length).padStart(2, '0');
+    titleEl.textContent = SHADER_NAMES[currentIdx];
+    descEl.textContent = SHADER_DESCRIPTIONS[currentIdx];
+    document.querySelectorAll('.thumb').forEach((t, j) => t.classList.toggle('active', j === currentIdx));
+  }
+  loadShader(0);
+
+  document.getElementById('prevBtn').onclick = () => loadShader(currentIdx - 1);
+  document.getElementById('nextBtn').onclick = () => loadShader(currentIdx + 1);
+
+  /* SCROLL REVEAL */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* MAGNETIC */
+  document.querySelectorAll('.magnetic').forEach(el => {
+    const strength = 0.3;
+    el.addEventListener('mousemove', e => {
+      const r = el.getBoundingClientRect();
+      const x = (e.clientX - (r.left + r.width/2)) * strength;
+      const y = (e.clientY - (r.top + r.height/2)) * strength;
+      el.style.transform = `translate(${x}px, ${y}px)`;
+    });
+    el.addEventListener('mouseleave', () => { el.style.transform = ''; });
+  });
+
+  /* FAQ */
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.addEventListener('click', () => item.classList.toggle('open'));
+  });
+
+  /* PARALLAX HERO TEXT */
+  const heroText = document.querySelector('.hero .container');
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    if (y < window.innerHeight) {
+      heroText.style.transform = `translateY(${y * 0.15}px)`;
+      heroText.style.opacity = String(Math.max(0, 1 - y / (window.innerHeight * 0.8)));
+    }
+  }, { passive: true });
+</script>
+
+</body>
+</html>
